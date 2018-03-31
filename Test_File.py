@@ -13,4 +13,4 @@ for row_number in range(height):
 		print("*", end="")
 	print()
 
-print("HAHAHAHAHAHAHAHAHAHA")
+print("Come on!")
