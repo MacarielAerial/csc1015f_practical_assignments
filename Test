@@ -1,0 +1,5 @@
+# A field for experimentation
+
+for a in range (10,1):
+	print(a, "x 7=", (a*7))
+
