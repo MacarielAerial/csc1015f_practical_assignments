@@ -5,7 +5,11 @@
 # Function1: Given a year (a 4 digit number), returns true if it is a leap year, and false otherwise.
 def is_leap_year(year):
 	"""Return True or False depending on if it's a leap year"""
-	if year % 4 ==0:
+	if year % 400 ==0:
+		return True
+	if year % 100 == 0:
+		return False
+	if year % 4 == 0:
 		return True
 	else:
 		return False
@@ -98,6 +102,10 @@ def first_day_of_year(year):
 	return day
 def first_day_of_month(month_number, year):
 	from datetime import datetime
-	day = 1 + datetime(year, month_number, 1).weekday()	
-	return day
+	datetime_code = ["6","0","1","2","3","4","5"]
+	assignment_code = ["0","1","2","3","4","5","6"]
+	datetime_convert_dict = dict(zip(datetime_code,assignment_code))
+	day = datetime(year,month_number,1).weekday()
+	final_output = int(datetime_convert_dict[str(day)])
+	return final_output
 
