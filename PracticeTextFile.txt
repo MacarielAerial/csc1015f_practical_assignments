@@ -1,0 +1,7 @@
+This is a file for me to practice how to open, read, re-write and close a file with python
+123123123123
+13th
+May
+2018
+This is the last line
+****************
